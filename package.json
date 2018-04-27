@@ -1,0 +1,22 @@
+{
+  "name": "dynamodb-batch-insert",
+  "version": "0.0.1",
+  "description": "inserts a batch of records into dynamodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendrikswan/dynamodb-batch-insert.git"
+  },
+  "keywords": [
+    "dynamodb"
+  ],
+  "author": "Hendrik Swanepoel <hendrik.swanepoel@gmail.com> (http://tagtree.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hendrikswan/dynamodb-batch-insert/issues"
+  },
+  "homepage": "https://github.com/hendrikswan/dynamodb-batch-insert#readme"
+}
