@@ -6,10 +6,13 @@ Here is an example of how to use it:
 
 ```
 const batchInsert = require('dynamodb-batch-insert');
-yield batchInsert({
+...
+await batchInsert({
   tableName: 'People',
   list: [{ name: 'Hendrik' }, { name: 'Stewart' }],
   chunkSize: 10, // adjust to provisioned throughput. Max 25 (batchWrite dynamodb limit)
-  msDelayBetweenChunks: 1000
+  msDelayBetweenChunks: 1000,
+  documentClient,
 });
+...
 ```

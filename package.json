@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-batch-insert",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "inserts a batch of records into dynamodb",
   "main": "index.js",
   "scripts": {

@@ -2,7 +2,6 @@
 
 async function batchedAsync({
   list,
-  callback,
   chunkSize = 10,
   msDelayBetweenChunks = 0,
   documentClient,
@@ -22,7 +21,7 @@ async function batchedAsync({
 async function writeItems({ chunk, chunks, documentClient, tableName }) {
   const { UnprocessedItems } = await documentClient.batchWrite({
     RequestItems: {
-      tableName: chunk.map(item => {
+      [tableName]: chunk.map(item => {
         return { PutRequest: { Item: item } };
       })
     }
